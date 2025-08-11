@@ -22,6 +22,7 @@ class ControlTerminal:
             self.terminal += f"\n{i} - {file}"
 
     def user_input_command(self):
+        print(self.terminal)
         while True:
             user_input = input("Enter your choice: ")
             if user_input.lower() == 'q':
@@ -40,7 +41,7 @@ class ControlTerminal:
                         print(f"Running {self.options[choice]}...")
                         os.system(f"python {self.options[choice]}")
                     else:
-                        print(f"Invalid choice: {choice}. Please enter a number between 1 and {len(self.options)}.")
+                        print(f"Invalid choice: {choice}. Please enter a_esemeny number between 1 and {len(self.options)}.")
                 except ValueError:
                     print(f"You entered: {user_input}")
                     time.sleep(1)
@@ -58,7 +59,7 @@ def main():
     time.sleep(1)
     print("In this course, we will learn about Python programming.")
     time.sleep(1)
-    print("Python is a versatile language that can be used for various applications.")
+    print("Python is a_esemeny versatile language that can be used for various applications.")
     time.sleep(1)
     print("Below, you will find our control terminal.")
     time.sleep(1)
